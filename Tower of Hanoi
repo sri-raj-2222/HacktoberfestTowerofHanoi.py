@@ -1,5 +1,5 @@
 def tower_of_hanoi(n, source, target, auxiliary):
-    if n == 0:  # ❌ Wrong base case (should be n == 1)
+    if n == 1:  # ✅ Correct base case
         print(f"Move disk 1 from {source} to {target}")
         return
     tower_of_hanoi(n - 1, source, auxiliary, target)
